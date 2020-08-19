@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Painttt</title>
+    <link href="styles.css" rel="stylesheet">
+    <script defer src="js/app.js" type="module"></script>
+</head>
+<body>   
+    
+        <div class="toolbox left">
+               
+            <div class="group tools">
+                <div class="item active" data-tool="line" >
+                    <img src="images/line-icon.png" />
+                </div>
+                <div class="item" data-tool="rectangle" >
+                    <img src="images/rect-icon.png"/>
+                </div>
+                <div class="item" data-tool="circle" >
+                    <img src="images/circle-icon.png"/>
+                </div>
+
+            </div>
+
+            <div class="group tools">
+                <div class="item" data-tool="pencil" >
+                        <img src="images/pencil-icon.png"/>
+                </div>
+                
+
+                <div class="item" data-tool="eraser" >
+                        <img src="images/eraser-icon.png"/>
+                </div>
+            </div>
+
+
+            <div class="group stroks pencil">
+                <div class="item active" data-line-width="1">
+                    <div class="stroke" style="width:1px;height: 1px;"></div>
+                </div>
+                <div class="item" data-line-width="2">
+                    <div class="stroke" style="width:4px;height: 4px;"></div>
+                </div>
+                <div class="item" data-line-width="3">
+                    <div class="stroke" style="width:6px;height: 6px;"></div>
+                </div>
+                <div class="item" data-line-width="4">
+                    <div class="stroke" style="width:8px;height: 8px;"></div>
+                </div>
+                <div class="item" data-line-width="5">
+                    <div class="stroke" style="width:15px;height: 15px;"></div>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <canvas id="canvas" width="1060" height="500"></canvas>
+
+        <div class="toolbox right">
+            <div class="group colors">
+                <div class="item active" data-color="#000000">
+                    <div class="pallette" style="background-color:#000000"></div>
+                </div>
+                <div class="item" data-color="#ffffff">
+                    <div class="pallette" style="background-color:#ffffff"></div>
+                </div>
+                <div class="item" data-color="#cc00ff">
+                    <div class="pallette" style="background-color:#cc00ff"></div>
+                </div>
+                <div class="item" data-color="#40a6fa">
+                    <div class="pallette" style="background-color:#40a6fa"></div>
+                </div>
+                <div class="item" data-color="#0000ff">
+                    <div class="pallette" style="background-color:#0000ff"></div>
+                </div>
+                <div class="item" data-color="#15ff00">
+                    <div class="pallette" style="background-color:#15ff00"></div>
+                </div>
+                <div class="item" data-color="#ffff00">
+                    <div class="pallette" style="background-color:#ffff00"></div>
+                </div>
+                <div class="item" data-color="#ff9100">
+                    <div class="pallette" style="background-color:#ff9100"></div>
+                </div>
+                <div class="item" data-color="#fa0606">
+                    <div class="pallette" style="background-color:#fa0606"></div>
+                </div>
+
+            </div>
+        </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,68 @@
+body{
+    margin:0px;
+    background-color:#070707;
+    
+}
+
+.toolbox{
+    height:80vh;
+    position: absolute;
+    background-color: #525253;
+   }
+
+ 
+.toolbox .group .item{
+    width:24px;
+    height: 24px;
+    padding:10px;
+    cursor: pointer;
+}
+
+.toolbox .group .item img{
+    width: 100%;
+    height: 100%;
+    filter:invert(1);
+}
+
+.toolbox .group .item.active, .toolbox .group .item:hover{
+    background-color:#3f4141;
+}
+
+.toolbox .group.stroks .item{
+    position: relative;
+}
+
+.toolbox .group.stroks .item .stroke{
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top:50%;
+    left:50%;
+}
+
+.toolbox .group.colors .item .pallette{
+    box-sizing: border-box;
+    border-radius: 50%;
+    width:100%;
+    height: 100%;
+    border:2px white solid;
+}
+
+.toolbox.left{
+    top:0px;
+    left:0px;
+}
+
+.toolbox.right{
+    top:0px;
+    left:50px;
+}
+
+#canvas{
+    position: absolute;
+    top:50%;
+    left:54%;
+    transform: translate(-50%, -50%);
+    background-color:white;
+}
